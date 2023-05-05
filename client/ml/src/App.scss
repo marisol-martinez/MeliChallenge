@@ -1,0 +1,152 @@
+@import './Variables.scss';
+
+body{
+    margin: 0;
+    background-color: $white;
+    font-family: "Roboto", "Gill Sans", sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.home {
+    padding: 70px 0;
+    text-align: center;
+
+    p, h1{
+    font-size: 17px;
+    color: $grey2; 
+    }
+}
+
+.contenedorPrincipal{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+
+    .contenedorLista{
+        background-color: white;
+        border-radius: 4px;
+    }
+}
+
+.cabezal{
+    background-color: $yellowML;
+    //height: 64px;
+    display: flex;
+    padding: 16px 0 16px 0;
+
+    .logoCabezal{
+        height: 32px;
+        margin-right: 20px;
+    }
+
+    .inputBuscador{
+        height: 22px;
+        width: 100%;
+        font-size: 18px;
+        color: $grey2;
+        border: none;
+        border-radius: 4px 0 0 4px;
+        padding: 5px 5px 5px 10px ;
+    }
+
+    .inputBuscador:focus {
+        padding: 4.5px 4.5px 4.5px 9.5px ;
+        border: 0.5px solid $blue;
+    }
+
+    .btnBuscador{
+        background-color: $white;
+        border: none;
+        border-radius: 0 4px 4px 0;
+
+        img{
+            display: block;
+            align-items: center;
+        }
+    }
+}
+
+
+
+.contenedorCard{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border-bottom: 1px solid $white;
+    cursor: pointer;
+
+    .imgListado{
+        height: 180px;
+        aspect-ratio: 1/1;
+        border-radius: 4px;
+        padding: 16px;
+    }
+}
+
+.contenedorDetalle{
+    display: flex;
+    background-color: white;
+    padding: 32px;
+
+    .sectionImage{
+        width: 680px;
+    }
+}
+
+.btn{
+    background-color: $blue;
+    height: 32px;
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 4px;   
+}
+
+.font12{
+    font-size: 12px;
+}
+
+.font14{
+    font-size: 14px;
+}
+
+.font18{
+    font-size: 18px;
+}
+
+.font24{
+    font-size: 24px;
+}
+
+.font28{
+    font-size: 28px;
+}
+
+.font46{
+    font-size: 46px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.decimals{
+    position: relative;
+    top: -7px;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.breadcrumb{
+    font-size: 14px;
+    color: $grey2;
+    margin: 16px 0 16px 0;
+}
+
+.iconShipping{
+    margin-left: 15px;
+}
